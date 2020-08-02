@@ -27,11 +27,9 @@ Test it in an Vagrant machine for
 | ubuntu1804 | ok                     |
 | debian9    | ok                     |
 | debian10   | incrond is not working |
-|            |                        |
+| ubuntu2004 | incrond is not working |
 
   
-
-
 
 #### Packages
 
