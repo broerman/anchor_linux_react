@@ -1,7 +1,12 @@
 #!/bin/bash
 
+# This script imstalls Incrond package an starts it.
+# incrontab for root is created
+# anchor_reaction.sh and anchor_notify.sh are installed under /usr/local/bin
+#
 
-# Install incon
+
+# Install incond service
 curl -Ss -L https://raw.githubusercontent.com/broerman/anchor_linux_react/master/provision/packages.sh | /bin/bash
 
 # get anchor_notify.sh
