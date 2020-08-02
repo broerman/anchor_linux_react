@@ -32,5 +32,5 @@ $NETTOOLS && ip route del default
 mount |sed -n  "s/.* on \(.*\) type \(ext[a-z0-9]*\|xfs\|btrfs\|zfs\) .*/mount -o remount,ro \1 # \2/p" | sh
 
 if   type -p logger   2>/dev/null ; then
-    logger  -p auth.emerg -t inotify "Your system was probably infecteted by ancher_linux /tmp/ancher.log"
+    logger  -p auth.emerg -t inotify "Your system was probably infecteted by ancher_linux, because /tmp/anchor.log was found."
 fi
