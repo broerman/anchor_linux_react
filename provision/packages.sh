@@ -4,7 +4,7 @@
 if test -e  /etc/debian_version ; then
     apt-get update ; apt-get install incron
     echo "root" > /etc/incron.allow
-elif test -e  /etc/redhat_release ; then 
+elif test -e  /etc/redhat-release ; then 
     yum -y  install incron
     systemctl enable  incrond 
 fi
