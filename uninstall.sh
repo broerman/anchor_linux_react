@@ -9,6 +9,14 @@
 # rm anchor_reaction.sh
 [ -e  /usr/local/bin/anchor_reaction.sh ] && rm /usr/local/bin/anchor_reaction.sh
 
-systemctl disable incrond
-systemctl stop incrond
+
+if test -e  /etc/debian_version ; then
+    systemctl disable incron
+    systemctl stop incron
+elif test -e  /etc/redhat-release ; then
+    systemctl disable incrond
+    systemctl stop incrond
+fi
+
+
 
