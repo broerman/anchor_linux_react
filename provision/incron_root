@@ -1,0 +1,1 @@
+/tmp IN_CREATE,IN_MODIFY /usr/local/bin/anchor_notify.sh $@ $# $%
