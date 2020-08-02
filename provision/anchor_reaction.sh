@@ -7,7 +7,7 @@ if   type -p ip   2>/dev/null ; then IPROUTE=true
 elif type -p route 2>/dev/null; then NETTOOLS=true
 fi
 
-$IPROUTE  && IFACE_PRIMARY=$(ip route | sed -n "s/default via \(.*\) dev \(.*\) proto .*/\2/p")
+$IPROUTE  && IFACE_PRIMARY=$(ip route | sed -n "s/default via \(.*\) dev \([a-z0-9]*\) .*/\2/p")
 $NETTOOLS && IFACE_PRIMARY=$(route -n | sed -n "s/^0.0.0.0 .* \([a-z0-9]*\)$/\1/p")
 
 
@@ -32,5 +32,5 @@ $NETTOOLS && ip route del default
 mount |sed -n  "s/.* on \(.*\) type \(ext[a-z0-9]*\|xfs\|btrfs\|zfs\) .*/mount -o remount,ro \1 # \2/p" | sh
 
 if   type -p logger   2>/dev/null ; then
-    logger  -p auth.emerg -t inotify "Your system was probably infecteted by ancher_linux, because /tmp/anchor.log was found."
+    logger  -p auth.emerg -t inotify "Your system was probably infecteted by ancher_linux, because /tmp/anchor.log was found. until reboot firewall drops all packages except SSH, default route ist deleted."
 fi

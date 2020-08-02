@@ -7,9 +7,10 @@ Incron can trigger a script on activities in a filesystem. In case of trickbot (
 So incrond watches the /tmp-folder and when an file Anchor.log is created or modified reaction are initiated.
 
 - disks to read-only ( remount )
-- stop network traffic ( aka panic mode )
+- stop network traffic ( aka panic mode ) , exept SSH
+- default route is deleted
 
-The system in unusable  after an  calling  script  **/usr/local/bin/trickbot.sh** and only accessible by console.
+The system in partial unusable  after an  calling  script  **/usr/local/bin/trickbot.sh** and only accessible by console.
 
 But  this is probably the victims intention.
 
@@ -17,16 +18,24 @@ But  this is probably the victims intention.
 
     curl https://raw.githubusercontent.com/broerman/anchor_linux_react/master/install.sh | bash 
 
-or test it in an Vagrant machine 
+Test it in an Vagrant machine for
 
+| os         |                        |
+| ---------- | ---------------------- |
+| centos7    | ok                     |
+| centos8    | ok                     |
+| ubuntu1804 | ok                     |
+| debian9    | ok                     |
+| debian10   | incrond is not working |
+|            |                        |
+
+  
 
 
 
 #### Packages
 
-    yum install incron
-    systemctl enable  incrond
-    systemctl start  incrond
+The package **incrond**  or **incon** has to be installed.
 
 #### Configuration
 
