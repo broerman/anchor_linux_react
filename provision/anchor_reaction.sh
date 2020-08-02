@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Notify
-# echo "Anchor.log modifyed" >> /root/A
-# poweroff -f
+# Things to do, which avoids spreading of virus
 
 IPROUTE=false;NETTOOLS=false
 if   type -p ip   2>/dev/null ; then IPROUTE=true
