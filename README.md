@@ -7,7 +7,7 @@ Incron can trigger a script on activities in a filesystem. In case of trickbot (
 So incrond watches the /tmp-folder and when an file anchor.log is created or modified reaction are initiated.
 
 - disks to read-only ( remount )
-- stop network traffic ( aka panic mode ) , exept SSH
+- stop network traffic ( aka panic mode ) , except SSH
 - default route is deleted
 
 The system in partial unusable  after an  calling  script  **/usr/local/bin/trickbot.sh** and only accessible by console.
