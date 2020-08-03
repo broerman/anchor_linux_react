@@ -10,7 +10,7 @@ So incrond watches the /tmp-folder and when an file anchor.log is created or mod
 - stop network traffic ( aka panic mode ) , except SSH
 - default route is deleted
 
-The system in partial unusable  after an  calling  script  **/usr/local/bin/trickbot.sh** and only accessible by console.
+The system in partial unusable  after calling  script  **/usr/local/bin/anchor_reaction.sh** and only accessible by console.
 
 But  this is probably the victims intention.
 
