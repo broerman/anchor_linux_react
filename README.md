@@ -14,11 +14,17 @@ The system in partial unusable  after calling  script  **/usr/local/bin/anchor_r
 
 But  this is probably the victims intention.
 
-#### Installation 
+#### Installation for impatient 
 
     curl https://raw.githubusercontent.com/broerman/anchor_linux_react/master/install.sh | bash 
 
-Test it in an Vagrant machine for
+#### Test in Vagrant
+
+Some vagarant images are tested.
+
+I noticed the incon package is not maintained for a long time.  
+
+
 
 | os         |                        |
 | ---------- | ---------------------- |
@@ -30,6 +36,8 @@ Test it in an Vagrant machine for
 | ubuntu2004 | incrond is not working |
 
   
+
+### Installation step-by-step
 
 #### Packages
 
@@ -44,7 +52,7 @@ The package **incrond**  or **incon** has to be installed.
 
 ###### notify script
 
-the notify script ist called every time when file are created or modified in /tmp.  
+the notify script is called every time when file are created or modified in /tmp.  
 
     /usr/local/bin/anchor_notify.sh
 
@@ -52,7 +60,7 @@ If filename matches anchor_linux log, then it calls anchor_reaction.sh.
 
 ###### action script
 
-in the reaction script are all system progs which prevends spreding the virus.
+in the reaction script are all system programs which prevents spreading the virus. 
 
 
 
