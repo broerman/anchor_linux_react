@@ -1,6 +1,6 @@
 # Anchor_Linux Protection
 
-Since on of August 2020 the virus, which attacks Linux systems to prevent an unwanted attack on for Linux machine, you can use [incrond](https://github.com/blt/incron). 
+Since on of August 2020 the virus, which attacks Linux systems to prevent an unwanted attack on for Linux machine, you can use [incrond](https://github.com/ar~/incron). 
 
 Incron can trigger a script on activities in a filesystem. In case of trickbot ( anchor_linux ) uses logfile file in   **/tmp/anchor.log**. 
 
